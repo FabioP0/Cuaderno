@@ -38,9 +38,9 @@ ingreso = InputBox("Isertar los ingresos anuales de la empresa")
                         If ingreso >= 1 And ingreso <= 1000 Then
                             MsgBox ("el impuesto es: " & impuesto)
                         End If
-                        If ingreso <= 0 Then
-                        MsgBox ("El impuesto es de: " & 0)
-                        End If
+                            If ingreso <= 0 Then
+                                MsgBox ("El impuesto es de: " & 0)
+                            End If
     End If
 End Sub
 ```
