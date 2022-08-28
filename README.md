@@ -16,8 +16,8 @@ ___
 Sub impuesto_a_pagar_empresa()
 ingreso = InputBox("Isertar los ingresos anuales de la empresa")
     If ingreso >= 1001 And ingreso <= 10000 Then
-    impuesto = ((ingreso * 5) / 100)
-    MsgBox ("el  impuesto es: " & impuesto)
+        impuesto = ((ingreso * 5) / 100)
+        MsgBox ("el  impuesto es: " & impuesto)
     Else
         If ingreso >= 10001 And ingreso <= 100000 Then
             impuesto = ((ingreso * 10) / 100)
