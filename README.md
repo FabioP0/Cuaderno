@@ -11,7 +11,7 @@ ___
 ## Aquí el primer codigo en visual basic
 <a href=""><img src="https://github.com/FabioP0/Cuaderno/blob/main/visual%20basic.png?raw=true" alt="Img" border="0" width="560"></a>
 ___
-## Programa hecho en la clase con esta fecha 26-08-2022
+## Programa impuesto empresa 26-08-2022
 ```
 Sub impuesto_a_pagar_empresa()
 ingreso = InputBox("Isertar los ingresos anuales de la empresa")
@@ -44,3 +44,29 @@ ingreso = InputBox("Isertar los ingresos anuales de la empresa")
     End If
 End Sub
 ```
+## Programa impuesto empresa con estructura Select Case
+```
+Sub sena()
+ingreso = Int(InputBox("Escriba los ingresos anuales de la empresa"))
+    Select Case ingreso
+        Case 0 To 1000
+            MsgBox ("El impuesto a pagar es: " & ingreso)
+                Case 1001 To 10000
+                    impuesto = ((ingreso * 5) / 100)
+                    MsgBox ("El impuesto a pagar es: " & impuesto)
+                        Case 10001 To 100000
+                            impuesto = ((ingreso * 10) / 100)
+                            MsgBox ("El impuesto a pagar es: " & impuesto)
+                                Case 100001 To 1000000
+                                    impuesto = ((ingreso * 15) / 100)
+                                    MsgBox ("El impuesto a pagar es: " & impuesto)
+                                        Case 1000001 To 10000000
+                                            impuesto = ((ingreso * 20) / 100)
+                                            MsgBox ("El impuesto a pagar es: " & impuesto)
+                                                Case Else
+                                                    impuesto = ((ingreso * 25) / 100)
+                                                    MsgBox ("El impuesto a pagar es: " & impuesto)
+    End Select
+End Sub
+```
+___
