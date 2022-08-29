@@ -1,5 +1,5 @@
 # Cuaderno
-Aquí registrare lo que vaya aprendiendo en las clases
+## Regristro de las clase de las clases 
 ___
 ## Hoja de vida creada en markdown 10-08-2022
 [Hoja de vida markdown](https://github.com/FabioP0/hoja_de_vida)
