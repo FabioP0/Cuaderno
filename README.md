@@ -23,24 +23,24 @@ Sub impuesto_a_pagar_empresa()
                 impuesto = ((ingreso * 10) / 100)
                 MsgBox ("el impuesto es: " & impuesto)
             End If
-                If ingreso >= 100001 And ingreso <= 1000000 Then
-                    impuesto = ((ingreso * 15) / 100)
-                    MsgBox ("el impuesto es: " & impueto)
-                End If
-                    If ingreso >= 1000001 And ingreso <= 10000000 Then
-                        impuesto = ((ingreso * 20) / 100)
-                        MsgBox ("el impuesto es: " & impuesto)
-                    End If
-                        If ingreso >= 10000001 Then
-                            impuesto = ((ingreso * 25) / 100)
-                            MsgBox ("el impuesto es: " & impuesto)
-                        End If
-                            If ingreso >= 1 And ingreso <= 1000 Then
-                                MsgBox ("el impuesto es: " & impuesto)
-                            End If
-                                If ingreso <= 0 Then
-                                    MsgBox ("El impuesto es de: " & 0)
-                                End If
+            If ingreso >= 100001 And ingreso <= 1000000 Then
+                impuesto = ((ingreso * 15) / 100)
+                MsgBox ("el impuesto es: " & impueto)
+            End If
+            If ingreso >= 1000001 And ingreso <= 10000000 Then
+                impuesto = ((ingreso * 20) / 100)
+                MsgBox ("el impuesto es: " & impuesto)
+            End If
+            If ingreso >= 10000001 Then
+                impuesto = ((ingreso * 25) / 100)
+                MsgBox ("el impuesto es: " & impuesto)
+            End If
+            If ingreso >= 1 And ingreso <= 1000 Then
+                MsgBox ("el impuesto es: " & impuesto)
+            End If
+            If ingreso <= 0 Then
+                MsgBox ("El impuesto es de: " & 0)
+            End If
         End If
 End Sub
 ```
