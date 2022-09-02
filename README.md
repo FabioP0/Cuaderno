@@ -14,59 +14,83 @@ ___
 ## Programa impuesto empresa 26-08-2022
 ```
 Sub impuesto_a_pagar_empresa()
-ingreso = InputBox("Isertar los ingresos anuales de la empresa")
-    If ingreso >= 1001 And ingreso <= 10000 Then
-        impuesto = ((ingreso * 5) / 100)
-        MsgBox ("el  impuesto es: " & impuesto)
-    Else
-        If ingreso >= 10001 And ingreso <= 100000 Then
-            impuesto = ((ingreso * 10) / 100)
-            MsgBox ("el impuesto es: " & impuesto)
-        End If
-            If ingreso >= 100001 And ingreso <= 1000000 Then
-                impuesto = ((ingreso * 15) / 100)
-                MsgBox ("el impuesto es: " & impueto)
+    ingreso = InputBox("Isertar los ingresos anuales de la empresa")
+        If ingreso >= 1001 And ingreso <= 10000 Then
+            impuesto = ((ingreso * 5) / 100)
+            MsgBox ("el  impuesto es: " & impuesto)
+        Else
+            If ingreso >= 10001 And ingreso <= 100000 Then
+                impuesto = ((ingreso * 10) / 100)
+                MsgBox ("el impuesto es: " & impuesto)
             End If
-                If ingreso >= 1000001 And ingreso <= 10000000 Then
-                    impuesto = ((ingreso * 20) / 100)
-                    MsgBox ("el impuesto es: " & impuesto)
+                If ingreso >= 100001 And ingreso <= 1000000 Then
+                    impuesto = ((ingreso * 15) / 100)
+                    MsgBox ("el impuesto es: " & impueto)
                 End If
-                    If ingreso >= 10000001 Then
-                        impuesto = ((ingreso * 25) / 100)
+                    If ingreso >= 1000001 And ingreso <= 10000000 Then
+                        impuesto = ((ingreso * 20) / 100)
                         MsgBox ("el impuesto es: " & impuesto)
                     End If
-                        If ingreso >= 1 And ingreso <= 1000 Then
+                        If ingreso >= 10000001 Then
+                            impuesto = ((ingreso * 25) / 100)
                             MsgBox ("el impuesto es: " & impuesto)
                         End If
-                            If ingreso <= 0 Then
-                                MsgBox ("El impuesto es de: " & 0)
+                            If ingreso >= 1 And ingreso <= 1000 Then
+                                MsgBox ("el impuesto es: " & impuesto)
                             End If
-    End If
+                                If ingreso <= 0 Then
+                                    MsgBox ("El impuesto es de: " & 0)
+                                End If
+        End If
 End Sub
 ```
 ## Programa impuesto empresa con estructura Select Case
 ```
 Sub sena()
-ingreso = Int(InputBox("Escriba los ingresos anuales de la empresa"))
-    Select Case ingreso
-        Case 0 To 1000
-            MsgBox ("El impuesto a pagar es: " & ingreso)
-                Case 1001 To 10000
-                    impuesto = ((ingreso * 5) / 100)
-                    MsgBox ("El impuesto a pagar es: " & impuesto)
-                        Case 10001 To 100000
-                            impuesto = ((ingreso * 10) / 100)
-                            MsgBox ("El impuesto a pagar es: " & impuesto)
-                                Case 100001 To 1000000
-                                    impuesto = ((ingreso * 15) / 100)
-                                    MsgBox ("El impuesto a pagar es: " & impuesto)
-                                        Case 1000001 To 10000000
-                                            impuesto = ((ingreso * 20) / 100)
-                                            MsgBox ("El impuesto a pagar es: " & impuesto)
-                                                Case Else
-                                                    impuesto = ((ingreso * 25) / 100)
-                                                    MsgBox ("El impuesto a pagar es: " & impuesto)
-    End Select
+    ingreso = Int(InputBox("Escriba los ingresos anuales de la empresa"))
+        Select Case ingreso
+            Case 0 To 1000
+                MsgBox ("El impuesto a pagar es: " & ingreso)
+                    Case 1001 To 10000
+                        impuesto = ((ingreso * 5) / 100)
+                        MsgBox ("El impuesto a pagar es: " & impuesto)
+                            Case 10001 To 100000
+                                impuesto = ((ingreso * 10) / 100)
+                                MsgBox ("El impuesto a pagar es: " & impuesto)
+                                    Case 100001 To 1000000
+                                        impuesto = ((ingreso * 15) / 100)
+                                        MsgBox ("El impuesto a pagar es: " & impuesto)
+                                            Case 1000001 To 10000000
+                                                impuesto = ((ingreso * 20) / 100)
+                                                MsgBox ("El impuesto a pagar es: " & impuesto)
+                                                    Case Else
+                                                        impuesto = ((ingreso * 25) / 100)
+                                                        MsgBox ("El impuesto a pagar es: " & impuesto)
+        End Select
 End Sub
 ```
 ___
+## Programa estudiantes 31-08-2022
+```
+Sub estudiante()
+    cont = 0
+    acum = 0
+    masde = 0
+    cant = Int(InputBox("Ingrese la cantidad de estudiantes que aportaron de los 7500"))
+        For i = 1 To cant
+            aporto = Int(InputBox("Ingrese la cantidad que aporto el estudiante"))
+            cont = cont + 1
+            acum = acum + aporto
+            noapor = 7500 - cant
+            prom = acum / cont
+                If aporto > 10000 Then
+                    masde = masde + 1
+                End If
+        Next i
+    MsgBox ("Cantidad de estudintes que aporto: " & cant)
+    MsgBox ("total recaudado: " & acum)
+    MsgBox ("El numero de estudiantes que no aporto: " & noapor)
+    MsgBox ("Valor recaudo promedio: " & prom)
+    MsgBox ("Los estudiantes que aportaron mas de 10.000 fueron: " & masde)
+End Sub
+```
