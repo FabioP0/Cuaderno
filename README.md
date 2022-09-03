@@ -51,21 +51,21 @@ Sub sena()
         Select Case ingreso
             Case 0 To 1000
                 MsgBox ("El impuesto a pagar es: " & ingreso)
-                    Case 1001 To 10000
-                        impuesto = ((ingreso * 5) / 100)
-                        MsgBox ("El impuesto a pagar es: " & impuesto)
-                            Case 10001 To 100000
-                                impuesto = ((ingreso * 10) / 100)
-                                MsgBox ("El impuesto a pagar es: " & impuesto)
-                                    Case 100001 To 1000000
-                                        impuesto = ((ingreso * 15) / 100)
-                                        MsgBox ("El impuesto a pagar es: " & impuesto)
-                                            Case 1000001 To 10000000
-                                                impuesto = ((ingreso * 20) / 100)
-                                                MsgBox ("El impuesto a pagar es: " & impuesto)
-                                                    Case Else
-                                                        impuesto = ((ingreso * 25) / 100)
-                                                        MsgBox ("El impuesto a pagar es: " & impuesto)
+                Case 1001 To 10000
+                    impuesto = ((ingreso * 5) / 100)
+                    MsgBox ("El impuesto a pagar es: " & impuesto)
+                Case 10001 To 100000
+                    impuesto = ((ingreso * 10) / 100)
+                    MsgBox ("El impuesto a pagar es: " & impuesto)
+                Case 100001 To 1000000
+                    impuesto = ((ingreso * 15) / 100)
+                    MsgBox ("El impuesto a pagar es: " & impuesto)
+                Case 1000001 To 10000000
+                    impuesto = ((ingreso * 20) / 100)
+                    MsgBox ("El impuesto a pagar es: " & impuesto)
+                Case Else
+                    impuesto = ((ingreso * 25) / 100)
+                    MsgBox ("El impuesto a pagar es: " & impuesto)
         End Select
 End Sub
 ```
