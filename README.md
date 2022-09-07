@@ -93,4 +93,21 @@ Sub estudiante()
     MsgBox ("Valor recaudo promedio: " & prom)
     MsgBox ("Los estudiantes que aportaron mas de 10.000 fueron: " & masde)
 End Sub
-```
+`´´
+Sub INICIO()
+   InputBox ("escriba el nombre del alumno "), f
+   InputBox ("escriba nota parcial "), b
+   InputBox ("escriba nota del examen final "), m
+   InputBox ("escriba promedio de practicas "), j
+
+   bm = (f + b + m + j) / 4
+   
+   If bm = 6 Then
+      MsgBox ("el nombre es : "), f
+      MsgBox ("el promedio final es : "), bm
+      MsgBox ("aprobado ")
+   Else
+      MsgBox ("desaprobado ")
+   End If
+   
+End Sub
