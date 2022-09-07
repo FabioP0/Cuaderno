@@ -95,6 +95,7 @@ Sub estudiante()
 End Sub
 ```
 ___
+```
 Sub INICIO()
    InputBox ("escriba el nombre del alumno "), f
    InputBox ("escriba nota parcial "), b
