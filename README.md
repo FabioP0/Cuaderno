@@ -93,7 +93,8 @@ Sub estudiante()
     MsgBox ("Valor recaudo promedio: " & prom)
     MsgBox ("Los estudiantes que aportaron mas de 10.000 fueron: " & masde)
 End Sub
-`´´
+```
+___
 Sub INICIO()
    InputBox ("escriba el nombre del alumno "), f
    InputBox ("escriba nota parcial "), b
@@ -111,3 +112,4 @@ Sub INICIO()
    End If
    
 End Sub
+```
