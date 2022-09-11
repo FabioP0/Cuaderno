@@ -96,21 +96,19 @@ End Sub
 ```
 ___
 ```
-Sub INICIO()
-   InputBox ("escriba el nombre del alumno "), f
-   InputBox ("escriba nota parcial "), b
-   InputBox ("escriba nota del examen final "), m
-   InputBox ("escriba promedio de practicas "), j
+Sub aprobo_no_aprobo()
+   nom = InputBox("Escriba el nombre del alumno")
+   par = Int(InputBox ("Escriba la nota del parcial"))
+   exa = Int(InputBox ("Escriba nota del examen final"))
+   pra = Int(InputBox ("Escriba promedio de practicas"))
 
-   bm = (f + b + m + j) / 4
+   nota = ((exa * 2) + par + pra) / 3
    
-   If bm = 6 Then
-      MsgBox ("el nombre es : "), f
-      MsgBox ("el promedio final es : "), bm
-      MsgBox ("aprobado ")
+   If nota = 6 Then
+      MsgBox ("El nombre del alumno es: " & nom)
+      MsgBox ("El alumno con nombre: " & nom & " aprobo con esta nota: " & nota)
    Else
-      MsgBox ("desaprobado ")
-   End If
-   
+      MsgBox ("No aprobo")
+   End If 
 End Sub
 ```
